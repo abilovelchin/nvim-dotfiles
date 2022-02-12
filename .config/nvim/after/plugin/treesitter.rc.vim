@@ -10,8 +10,7 @@ require'nvim-treesitter.configs'.setup {
     disable = {},
   },
   indent = {
-    enable = true,
-    disable = {},
+    enable = false
   },
   ensure_installed = {
     "tsx",

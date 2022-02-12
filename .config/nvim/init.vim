@@ -48,13 +48,13 @@ set ignorecase
 " Be smart when using tabs ;)
 set smarttab
 " indents
-filetype plugin indent on
+"filetype plugin indent on
 set shiftwidth=2
 set tabstop=2
 set ai "Auto indent
-set si "Smart indent
-set nowrap "No Wrap lines
-set backspace=start,eol,indent
+"set si "Smart indent
+set wrap "No Wrap lines
+"set backspace=start,eol,indent
 " Finding files - Search down into subfolders
 set path+=**
 set wildignore+=*/node_modules/*
@@ -64,6 +64,7 @@ autocmd InsertLeave * set nopaste
 
 " Add asterisks in block comments
 set formatoptions+=r
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 "}}}
 

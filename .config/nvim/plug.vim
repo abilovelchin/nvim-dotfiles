@@ -28,7 +28,8 @@ if has("nvim")
   Plug 'windwp/nvim-autopairs'
   Plug 'windwp/nvim-ts-autotag'
   Plug 'preservim/nerdtree',
-  Plug 'mattn/emmet-vim'
+  Plug 'mattn/emmet-vim',
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 endif
 
 let g:netrw_banner = 0

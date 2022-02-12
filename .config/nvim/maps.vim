@@ -42,8 +42,8 @@ nmap <Tab> :tabnext<Return>
 " Windows
 
 " Split window
-nmap ss :split<Return><C-w>w
-nmap sv :vsplit<Return><C-w>w
+nmap ss :vsplit<Return><C-w>w
+nmap sv :split<Return><C-w>w
 " Move window
 nmap <Space> <C-w>w
 map s<left> <C-w>h
@@ -60,3 +60,9 @@ nmap <C-w><right> <C-w>>
 nmap <C-w><up> <C-w>+
 nmap <C-w><down> <C-w>-
 
+" Quit window
+nmap qq :q!<Return>
+
+" Reload vim for affected changes
+nmap source :source $MYVIMRC<Return>
+nmap qe :e .<Return>

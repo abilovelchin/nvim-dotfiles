@@ -29,7 +29,7 @@ if has("nvim")
   Plug 'windwp/nvim-ts-autotag'
   Plug 'preservim/nerdtree',
   Plug 'mattn/emmet-vim',
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 endif
 
 let g:netrw_banner = 0
